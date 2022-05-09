@@ -189,8 +189,8 @@ function changeddl(obj) {
                 option.style.display = 'block'
         }
 
-        if (text == 'Master of Sciecne(M.Sc)') {
-            if (['M.Sc in Chemistry', 
+if (text == 'Master of Sciecne(M.Sc)') {
+    if (['M.Sc in Chemistry', 
 'M.Sc in Planetology',	
 'M.Sc in Cyber Forensic',
 'M.Sc in Pharmacy',	
@@ -227,6 +227,9 @@ function changeddl(obj) {
 }
 
 
+    // let myButton = document.getElementById('sub').onclick = function(){
+    //     location.href="C:\VS Code\Web_To_Lead\registration-successful-message-html\index.html";
+    // }
 
 
 
@@ -253,116 +256,4 @@ function changeddl(obj) {
 
 
 
-// SlideShow
 
-//using setInterval() to make an image slider
-
-//function newDate(){
-//console.log(new Date());};
-//setInterval(newDate, 3000);  
-
-//the above code would console.log the date every 3seconds 
-
-//$(selector).animate(obj,time,callback);
-//callback-do something after the animation is complete
-
-// $(document).ready(function() {
-//     //seInterval animate margin-left and the last slide go to the first position (0px) 
-  
-//     var width = 720;
-//     var animationSpeed = 1000;
-//     var pause = 3000;
-//     var currentSlide = 1;
-//     // try and configure all the variables so that you can change it at any point( things of the same type at the same place)
-  
-//     var $slider = $("#slider");
-//     var $slideContainer = $slider.find('.slides');
-//     var $slides = $slideContainer.find('.slide');
-  
-//     //the jQuery selector is used only once and the code is very efficient as you are CACHING THE DOM
-//     var interval;
-//     //have to define the variable outside startSlider() to have it in the scope of a function call
-  
-//     function startSlider() {
-//     interval =  setInterval(function() {
-//         $($slideContainer).animate({
-//           "margin-left": "-=" + width
-//         }, animationSpeed, firstSlide);
-//       }, pause);
-  
-//       function firstSlide() {
-//         currentSlide++;
-//         if (currentSlide === $slides.length) {
-//           currentSlide = 1;
-//           $slideContainer.css("margin-left", 0);
-//         }
-//       }
-//     }
-    
-//     function stopSlider(){
-//       clearInterval(interval);
-//     }
-//     $slider.on("mouseenter", stopSlider).on("mouseleave", startSlider);
-  
-//     startSlider();
-//   });
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// function handleSubmit(){
-// alert("Successfully Registered...");
-// window.location.reload();
-// }
-
-
-// let me = document.createElement('div');
-// me.setAttribute('width', '200px')
-// me.setAttribute('border', '5px solid black')
-// me.setAttribute('height', '500px')
-
-
-
-// function slideshow() {
-
-//     let arr = [
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Astro.png",
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Blaze.png",
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Brandy.png",
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrationsCloudy.png",
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Codey.png",
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Einstien.png",
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Koa.png",
-//     "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Ruth.png"
-//     ];
-
-//     let div = document.getElementById('slideshow');
-
-
-
-//     let img = document.createElement('img');
-
-//     // img.style.borderRadius = '5px';
-//     // img.style.marginLeft = '-1px';
-//     // img.style.marginTop = '18px';
-
-//     // img.setAttribute('width', '100%')
-//     // img.setAttribute('height', '500px')
-
-//     let i = 0;
-//     img.src = arr[0];
-//     console.log('result',img)
-//     console.log(arr.length)
-//     div.append(img);
-
-//     setInterval(function () {
-//         if(i == arr.length) {
-//             i = 0;
-//         }
-//         img.src = arr[i];
-//         i++;
-
-//     }, 1000);
-// }
-
-// slideshow();
